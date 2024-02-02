@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KIKO Studio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.webp">
+    <link rel="stylesheet" href="style_presets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Content -->
+    <div class="container">
+        <section class="presets">
+            <h2>- PRESETS -</h2>
+            <h3>Kiko Universe</h3>
+            <div class="card-wrapper">
+                <span class="loading">Please wait...</span>
+            </div>
+        </section>
+
+        <footer>
+            <div class="sosmed-wrapper">
+                <a href="https://www.tiktok.com/@oke_kiko?_t=8cXIeGaYvrO&_r=1" target="_blank" title="TikTok">
+                    <img src="tiktok.svg" alt="TikTok">
+                </a>
+                <a href="https://youtube.com/@okekiko" target="_blank" title="YouTube">
+                    <img src="youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://instagram.com/oke_kiko?igshid=ZGUzMzM3NWJiOQ==" target="_blank" title="Instagram">
+                    <img src="instagram.svg" alt="Instagram">
+                </a>
+            </div>
+            <p class="copyright">Copyright ©[Year] KIKO Studio. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Popup Checkout -->
+    <div class="popup-checkout">
+        <span class="loading">Sending your order...</span>
+
+        <div class="card-popup">
+            <div class="header">
+                <span class="icon-checkout"><img src="shopping_cart.svg" alt="Shopping Cart"></span>
+                <h3>Checkout</h3>
+            </div>
+            <div class="content">
+                <p class="label">Selected Preset :</p>
+                <div class="card">
+                    <span class="loading">Please wait...</span>
+                </div>
+                <p class="label">WhatsApp Number<span>*</span> :</p>
+                <input type="tel" class="wa-number" placeholder="xxxx-xxxx-xxxx">
+            </div>
+            <div class="footer">
+                <div class="total-price">
+                    <h5>Total Price</h5>
+                    <h4 class="price">Rp 0</h4>
+                </div>
+                <button class="btn-order">ORDER NOW</button>
+            </div>
+        </div>
+
+        <span class="close-popup"><img src="x2.svg" alt="Close"></span>
+    </div>
+
+    <!-- Alert -->
+    <div class="alert">
+        <div class="alert-icon">
+            <img src="alert.svg" alt="alert">
+        </div>
+        <div class="alert-content">
+            <p>Notification</p>
+            <p class="alert-message">Message</p>
+        </div>
+        <img src="x.svg" alt="close" class="close-alert">
+    </div>
+
+    <!-- Preload -->
+    <div class="preloader">
+        <span class="loading"></span>
+    </div>
+
+    <!-- Presets Script -->
+    <script src="script_presets.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("UcS9iKXPpgTbTdTSc");
+        })();
+    </script>
+</body>
+
+</html>
