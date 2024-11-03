@@ -3,6 +3,8 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.preloader').style.display = 'none';
 });
 
+console.log(window.location.pathName);
+
 // Get Views Count
 let viewsCount = 0;
 
